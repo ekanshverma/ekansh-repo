@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bug Report form</title>
+   <style type="text/css">
+   * {
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+   .submit{
+       border-radius: 5px;
+       border: 2px solid grey;
+       width:60px;
+       height: 30px;
+       background-color: #179b7c;
+       color: white;
+       margin-left:350px;
+   }
+   textarea{
+       border-radius: 5px;
+   }
+   
+   input {
+    border-radius: 5px;
+    border: 2px solid grey;
+   }
+   
+   
+   select {
+       border-radius: 5px;
+       width:460px;
+       background-color: #179b7c;
+       color: white;
+       -webkit-appearance: caret ;        
+   }    
+       
+   .topnav {
+         overflow: hidden;
+       }
+
+   .topnav a {
+         float: right;
+         color: #1BE6E6;
+         text-align: center;
+         padding: 30px 16px;
+         text-decoration: none;
+         font-size: 17px;
+       }
+   
+   .topnav h1{
+           float: left;
+           color: #1BE6E6;
+       }
+   h2{
+       background-color: #B9C9C3;
+       padding: 20px 16px;
+       color: white;
+   }
+   </style>
+</head>
+
+<body>
+   <div class="topnav">
+     <h1>TO THE NEW</h1>    
+     <a href="#quicknews">Quick Help</a>
+     <a href="#home">Home</a>
+  </div>
+  <hr>
+  <div  style= "position: absolute;background-color: eeeeee; color: grey; border:thin #A9C7C7; border-style : solid ; line-height: 30px; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; left: 35%; margin-left: 1px;">
+   <h2>Bug Report</h2>
+   <form class = "" action= "#" method = "post" \>
+       
+       Title:*<br>
+       <input type="text" name="Title" size="55" required><br>
+       
+       Description:*<br>
+       <textarea name="message" rows="6" cols="55" required></textarea><br>
+       
+       Operating System:<br>
+       <select name="os">
+         <option value="Ubuntu">Windows XP</option>
+         <option value="RHEL">Ubuntu</option>
+         <option value="Mint">RHEL</option>
+         <option value="Windows">MAC</option>
+       </select><br>
+       
+       Product:*<br>
+       <select name="Product">
+         <option value="Formoid">Formoid</option>
+         <option value="Docker">Docker</option>
+         <option value="Jenkins">Jenkins</option>
+         <option value="Ansible">Ansible</option>
+       </select><br>
+       
+       Version:*<br>
+       <input id="version" type="text" size="10 " name="Version" required><br>
+
+       License:<br>
+       <input type="radio" name="License" value="Free" required>Free&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+       <input type="radio" name="License" value="Business"required>Business<br>
+       Severity:<br>
+       <select name="Severity">
+         <option value="Critical">Critical</option>
+         <option value="Medium">Medium</option>
+         <option value="Low">Low</option>
+</select><br>
+
+       Attachments:<br>
+        <input class ="file" type="file" name="File" value="fileupload" accept="*" ><br><br>
+        <input class="submit" type="submit" name="send" value="send">
+       
+   </form>
+
+</div>
+</body>
+</html>
