@@ -1,0 +1,7 @@
+---
+- name: Install Tomcat and jenkins
+  hosts: webservers
+  become: yes
+  roles:
+          - jenkins_role
+          - tomcat_role

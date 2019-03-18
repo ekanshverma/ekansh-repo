@@ -1,0 +1,11 @@
+- hosts: demo-node
+  vars:
+          hello:
+                  - World
+                  - Asia
+                  - South America
+                  - Artic
+  tasks:
+          - name: Ansible List string....dvv
+            debug:
+              msg: "{{ hello[2] }}"

@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+  - name: Ansible command module multiple commands
+    command: "touch {{ item }}"
+    with_items:
+      - hello.txt
+      - hello2.txt
+      - hello3.txt
+    args:
+      chdir: /tmp/ 
